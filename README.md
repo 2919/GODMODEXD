@@ -1,0 +1,2 @@
+# Noteikumi--NGNM-
+Noteikumi!
