@@ -327,9 +327,3 @@ pointer-events: auto;
 .pop-menu.grab .menu ul li:hover i {
     filter: brightness(3);
 }
-/* keyframes */
-
-@keyframes fadein {
-	from {opacity: 0;}
-	to   {opacity: 1;}
-}
