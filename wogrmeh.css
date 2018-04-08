@@ -1,0 +1,329 @@
+#vote .label{
+display: none !important;
+}
+#vote .value{
+ top: 25px !important;
+}
+#vote .top,
+#woot .icon,
+#grab .icon,
+#meh .icon{
+height: 80px !important;
+width: 80px !important;
+margin: 0 !important;
+top: 0 !important;
+}
+#woot.crowd-response .icon{
+ background: url('https://imgur.com/a50OFeB.png');
+}
+
+#woot.crowd-response.disabled .icon,
+#woot.crowd-response.selected .icon {
+ background: url('https://imgur.com/KbSUYLK.png');
+}
+
+#grab.crowd-response .icon{
+ background: url('https://imgur.com/BSpe1HI.png');
+}
+
+#grab.crowd-response.disabled .icon,
+#grab.crowd-response.selected .icon {
+ background: url('https://imgur.com/jW5i9G8.png');
+}
+
+#meh.crowd-response .icon{
+ background: url('https://imgur.com/4vr8Fvf.png');
+}
+
+#meh.crowd-response.disabled .icon,
+#meh.crowd-response.selected .icon {
+ background: url('https://imgur.com/7Mz9X9S.png');
+}
+#woot,
+#grab,
+#meh{
+  height: 80px !important;
+  width: 80px !important;
+  border-radius: 50%;
+  border: 2px solid;
+  bottom: 10px !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+#woot:hover,
+#grab:hover,
+#meh:hover {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+#vote .bottom{
+ background: rgba(0, 0, 0, 0) !important;
+}
+#woot:not(.selected){
+  border: 2px solid #25b961;
+}
+#grab:not(.selected){
+  border: 2px solid #aa74ff;
+}
+#meh:not(.selected){
+  border: 2px solid #c42e3b;
+}
+
+#woot.selected {
+    background: #25b961 !important;
+}
+#grab.selected{
+    background: #aa74ff !important;
+}
+#meh.selected{
+    background: #c42e3b !important;
+}
+#vote .crowd-response.disabled .bottom {
+    background: rgba(0, 0, 0, 0.28);
+}
+
+
+
+#woot.crowd-response.disabled .icon:before,
+#woot.crowd-response.selected .icon:before {
+    content: url(https://imgur.com/KbSUYLK.png);
+    position: absolute;
+    right: 0px;
+    padding: 0 0px;
+}
+#woot.crowd-response .icon:before {
+    content: url(https://imgur.com/a50OFeB.png);
+    position: absolute;
+    right: 0px;
+    padding: 0 0px;
+}
+#woot:hover .icon:before {
+    -webkit-animation-name: woot;
+    animation-name: woot;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+#woot .icon:before {
+    opacity: 0;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes woot {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-1em);
+    transform: translateY(-1em);
+  }
+}
+#grab.crowd-response:not(.selected) .icon:after {
+    content: url(https://imgur.com/BSpe1HI.png);
+    position: absolute;
+    right: 0px;
+    padding: 1px -1px;
+}
+#grab.crowd-response.disabled .icon:after {
+    content: url(https://imgur.com/jW5i9G8.png);
+    position: absolute;
+    right: 0px;
+    padding: 1px -1px;
+}
+#grab:hover .icon:after {
+    -webkit-animation-name: grab;
+    animation-name: grab;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+#grab .icon:after {
+    opacity: 0;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes grab {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1) translateZ(0);
+    transform: scale(1) translateZ(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.5) translateZ(0);
+    transform: scale(1.5) translateZ(0);
+  }
+}
+#meh.crowd-response.disabled .icon:after,
+#meh.crowd-response.selected .icon:after {
+    content: url(https://imgur.com/7Mz9X9S.png);
+    position: absolute;
+    right: 0px;
+    padding: 0 0;
+}
+#meh.crowd-response .icon:after {
+    content: url(https://imgur.com/4vr8Fvf.png);
+    position: absolute;
+    right: 0px;
+    padding: 0 0;
+}
+#meh:hover .icon:after {
+    -webkit-animation-name: meh;
+    animation-name: meh;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+#meh .icon:after {
+    opacity: 0;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes meh {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(1em);
+    transform: translateY(1em);
+  }
+}
+
+#woot.selected .icon, #grab.selected .icon, #meh.selected .icon {
+    animation: pulse 1s ease infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#dj-button {
+   background-color: rgba(0, 0, 0, 0) !important;
+}
+#dj-button:hover {
+   background-color: rgba(0, 0, 0, 0.35) !important;
+}
+#dj-button .left{
+ background: rgba(0, 0, 0, 0) !important;
+}
+#dj-button {
+    left: 25px !important;
+    right: 1100px !important;
+    margin: auto;
+}
+.video-only #dj-button{
+   left: 0px !important;
+}
+#dj-button {
+    width: 72px !important;
+}
+#dj-button span{
+    opacity: 0;
+    width: 120px;
+
+}
+#dj-button:hover span{
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    opacity: 1.0;
+    width: 148px;
+}
+#dj-button:hover {
+    width: 230px !important;
+}
+#dj-button {
+    border-radius: 50px;
+}
+#dj-button.is-locked {
+    cursor: no-drop;
+}
+#dj-button.is-full, #dj-button.is-locked {
+border: 2px solid #585858;
+}
+#dj-button.is-leave, #dj-button.is-quit {
+border: 2px solid #c42e3b;
+}
+#dj-button {
+border: 2px solid #25b961;
+}
+#dj-button span{
+pointer-events: none;
+}
+#dj-button:hover span{
+pointer-events: auto;
+}
+
+#dj-button,
+#dj-button span,
+#chat .un,
+#vote,
+#woot,
+#woot .top
+#grab,
+#grab .top
+#meh,
+#meh .top{
+    -webkit-transition:     all 0.3s ease;
+    -moz-transition:        all 0.3s ease;
+    -o-transition:          all 0.3s ease;
+    transition:             all 0.3s ease;
+}
+/*
+ ┌————————————————————┐
+ │  RCS Vote list     │
+ └————————————————————┘
+*/
+.votes-rs {
+    background-color: rgba(0, 0, 0, 0.50) !important;
+}
+#woot-rs .title {
+    background-color: #25b961;
+}
+#grab-rs .title {
+    background-color: #aa74ff;
+}
+#meh-rs .title {
+    background-color: #c42e3b;
+}
+/*
+ ┌————————————————————┐
+ │    Grab pop-up     │
+ └————————————————————┘
+*/
+.pop-menu.grab {
+    background: transparent;
+}
+.pop-menu.grab .bar {
+    background: linear-gradient(rgb(170, 116, 255), #925aff);
+    box-shadow: inset -157px 0 0 0 #222;
+}
+.pop-menu .bar .bar-divider {
+    background: #AAA;
+}
+.pop-menu.grab .menu::-webkit-scrollbar-thumb {
+    background: rgb(105, 68, 170) !important;
+}
+.pop-menu.grab .menu ul {
+    background: rgba(0,0,0,.5)
+}
+.pop-menu.grab .menu ul li:hover {
+    background: linear-gradient(rgba(170, 116, 255, .5), rgba(146, 90, 255, .5)) !important
+}
+.pop-menu.grab .menu ul li.create:hover {
+    background: linear-gradient(rgba(66, 165, 220, .5), rgba(0, 155, 221, .5)) !important
+}
+.pop-menu.grab .menu ul li:hover i {
+    filter: brightness(3);
+}
