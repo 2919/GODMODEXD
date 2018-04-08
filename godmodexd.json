@@ -2,7 +2,7 @@
 	"room": "GODMODE",
 	"author": "2919",
 	"icon": "",
-	"css": "https://raw.githubusercontent.com/2919/GODMODEXD/master/skrrt.css",
+	"css": "https://rawgit.com/2919/GODMODEXD/master/skrrt.css",
 	"rules": {
 		"allowAutorespond": true,
 		"allowAutowoot":    true,
@@ -27,7 +27,7 @@
 		"you":              "null"
 	},
 	"images": {
-		"background":       "null",
+		"background":       "https://i.imgur.com/bYG3U4u.png",
 		"playback":         "null",
 		"admin":            "null",
 		"ambassador":       "null",
