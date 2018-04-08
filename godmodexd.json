@@ -14,30 +14,30 @@
       "forceSmartVote":false
     },
     "ccc": {
-        "admin": null,
-        "ambassador": null,
-        "host": null,
-        "cohost": null,
-        "manager": null,
-        "bouncer": null,
-        "rdj": null,
-        "subscriber": null,
-        "silversubscriber": null,
-        "friend": null,
-        "user": null
+        "admin": "null",
+        "ambassador": "null",
+        "host": "#ffd700",
+        "cohost": "#ffd700",
+        "manager": "#008000",
+        "bouncer": "#ff0000",
+        "rdj": "#5E5EFF",
+        "subscriber": "#D4AF37",
+        "silversubscriber": "#D4D4D4",
+        "friend": "null",
+        "user": "#0bf"
     },
     "images": {
         "background":"https://s18.postimg.org/jeli2bea1/image.jpg",
         "playback": null,
         "admin": null,
         "ambassador": null,
-        "host": null,
-        "cohost": null,
-        "manager": null,
-        "bouncer": null,
-        "rdj": null,
-        "subscriber": null,
-        "silversubscriber": null
+        "host": "https://i.imgur.com/Hm8kCDL.png",
+        "cohost": "https://i.imgur.com/Hm8kCDL.png",
+        "manager": "https://i.imgur.com/SCkLxHj.png",
+        "bouncer": "https://i.imgur.com/YUKVqO2.png",
+        "rdj": "https://i.imgur.com/axKg19I.png",
+        "subscriber": "https://i.imgur.com/zIbImv1.png",
+        "silversubscriber": "https://i.imgur.com/AHDikC9.png"
     },
     "emotes": {
     	"emote_name": null
