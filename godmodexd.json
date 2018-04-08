@@ -27,7 +27,7 @@
         "user": null
     },
     "images": {
-        "background": null,
+        "background":"https://s18.postimg.org/jeli2bea1/image.jpg",
         "playback": null,
         "admin": null,
         "ambassador": null,
