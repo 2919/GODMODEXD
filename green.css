@@ -1,4 +1,60 @@
-@import url("https://rawgit.com/2919/GODMODEXD/master/wogrmeh.css")
+@import url("https://raw.githubusercontent.com/2919/GODMODEXD/master/wogrmeh.css");
+
+/*
+ ┌————————————————————┐
+ │     Variables      │
+ └————————————————————┘
+*/
+html {
+    --yellow-green-gradient: linear-gradient(hsl(125,50%,35%), hsl(125,50%,30%));
+    --yellow-greener-gradient: linear-gradient(hsl(125,50%,50%), hsl(125,50%,40%));
+    --red-meh-gradient: linear-gradient(rgb(196, 46, 59), rgb(138, 34, 43));
+    --woot-green-gradient: linear-gradient(rgb(37, 185, 97), rgb(24, 115, 61));
+}
+
+/* Adding stuff from the json in case it didn't loaded */
+.icon-room {
+    background: none;
+    width: 75px !important;
+}
+.icon-room:before {
+    content: '';
+    display: block;
+    width: 75px; height: 30px;
+
+    background: url('https://rawgit.com/Satskhi/EDTRCS/master/images/EDT-Logo2.png') center center / 75px no-repeat;
+}
+#room-name, #room-host {
+    left: 89px !important;
+}
+#playback .background img {
+    display: none;
+}
+#playback .background {
+    background: url('https://rawgit.com/Satskhi/EDTRCS/master/images/PlaybackEDT2.0.png') !important;
+    width: 521px; height: 292px;
+    left: -19px;
+    background-size: cover !important;
+}
+.room-background {
+    background-image: url(https://rawgit.com/Satskhi/EDTRCS/master/images/EDT-Background.jpg) !important;
+}
+/*p3 fix*/
+.room-background:before{
+content: " ";
+background: url(https://i.imgur.com/FFpjfD4.jpg) no-repeat;
+position:absolute;
+height: 100%;
+width: 100%;
+}
+
+
+#room-name, #room-host, #now-playing-dj, #now-playing-media {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+
 /*
  ┌————————————————————┐
  │    TRANSPARENCY    │
