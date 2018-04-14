@@ -32,12 +32,12 @@
 		"admin":            "null",
 		"ambassador":       "null",
 	        "host":   "https://i.imgur.com/Hm8kCDL.png",
-                "cohost":   "https://i.imgur.com/Hm8kCDL.png",
-                "manager":   "https://i.imgur.com/SCkLxHj.png",
-                "bouncer":   "https://i.imgur.com/YUKVqO2.png",
-                "rdj":   "https://i.imgur.com/axKg19I.png",
-                "subscriber":   "https://i.imgur.com/zIbImv1.png",
-                "silversubscriber":   "https://i.imgur.com/AHDikC9.png"
+                "cohost":   "https://i.imgur.com/YUKVqO2.png",
+                "manager":   "null",
+                "bouncer":   "null",
+                "rdj":   "null",
+                "subscriber":   "null",
+                "silversubscriber":   "null"
 	},
 	"emotes": {
 		"emote_name": null
