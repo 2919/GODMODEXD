@@ -2,7 +2,7 @@
 	"room": "GODMODE",
 	"author": "2919",
 	"icon": "",
-	"css": "https://rawgit.com/2919/GODMODEXD/master/skrrt.css",
+	"css": "https://rawgit.com/2919/GODMODEXD/master/url.css",
 	"rules": {
 		"allowAutorespond": true,
 		"allowAutowoot":    true,
