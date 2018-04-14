@@ -1,0 +1,5 @@
+/*remove link rcs*/
+#room-settings .general-settings .description .value a:last-of-type {
+	display:none !important;
+}
+/*remove link rcs*/
