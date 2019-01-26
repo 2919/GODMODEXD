@@ -1,0 +1,38 @@
+<UserControl x:Class="ReAuth.ProxyFlyout"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008">
+  <Grid Margin="0,0,0,-30">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition/>
+      <ColumnDefinition Width="9*"/>
+    </Grid.ColumnDefinitions>
+    <Label Content="Working Proxy:" FontSize="20" Margin="0,10,0,400" VerticalContentAlignment="Top"
+           HorizontalAlignment="Stretch" Grid.ColumnSpan="2"/>
+    <DataGrid x:Name="ProxyGrid" HorizontalAlignment="Left" Height="285" Margin="0,45,0,0"
+              VerticalAlignment="Top" Width="400" CanUserAddRows="false" AutoGenerateColumns="false"
+              Grid.ColumnSpan="2" BindingGroup="{Binding ProxyHelper.ProxyList}">
+      <DataGrid.ColumnHeaderStyle>
+        <Style TargetType="{x:Type DataGridColumnHeader}" BasedOn="{StaticResource MetroDataGridColumnHeader}">
+          <Setter Property="Control.HorizontalContentAlignment" Value="Center"/>
+          <Setter Property="Control.FontSize" Value="10"/>
+        </Style>
+      </DataGrid.ColumnHeaderStyle>
+      <DataGrid.Columns>
+        <DataGridTextColumn Header="Host" IsReadOnly="false" Width="240" Binding="{Binding Host}"/>
+        <DataGridTextColumn x:Name="Password" Header="Port" IsReadOnly="false" Width="150" Binding="{Binding Port}"/>
+      </DataGrid.Columns>
+    </DataGrid>
+    <Button Click="AddProxyClick" x:Name="ButtonProxyAdd" Content="Add Proxy" HorizontalAlignment="Left"
+            Margin="10,335,0,0" VerticalAlignment="Top" Width="380" Grid.ColumnSpan="2" Height="27"/>
+    <Button Click="ProxyStopCheckingClick" x:Name="ButtonProxyStopChecking" Content="Stop Checking"
+            HorizontalAlignment="Left" Margin="10,367,0,0" VerticalAlignment="Top" Width="185"
+            Grid.ColumnSpan="2" IsEnabled="false" Height="27"/>
+    <Button Click="ProxyWorkingExportClick" x:Name="ButtonProxyExport" Content="Export Working Proxy"
+            HorizontalAlignment="Left" Margin="160,367,0,0" VerticalAlignment="Top" Width="185" Grid.Column="1"
+            Height="27" IsEnabled="false"/>
+    <Label x:Name="LabelProxyStatus" Content="Status: Waiting for proxy" FontSize="10" Margin="96,400,15,10"
+           VerticalContentAlignment="Top" HorizontalAlignment="Center" Grid.Column="1" Width="249"/>
+  </Grid>
+</UserControl>

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\shawtware\Desktop\ReAuth.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0565D47F-3334-4592-BA65-1F065182D118}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>ReAuth</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.6953.41762</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>ReAuth</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProcessedByFody.cs" />
+    <Compile Include="_003CModule_003E.cs" />
+    <Compile Include="XamlGeneratedNamespace\GeneratedInternalTypeHelper.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="AccountEdit.cs" />
+    <Compile Include="Checker.cs" />
+    <Compile Include="CheckerCore.cs" />
+    <Compile Include="BaseViewModel.cs" />
+    <Compile Include="SearchWindow.cs" />
+    <Compile Include="LoadClientVersion.cs" />
+    <Compile Include="JsonFormat.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="ConcurrentQueueExtensions.cs" />
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="ProxyHelper.cs" />
+    <Compile Include="ProxyData.cs" />
+    <Compile Include="RegionData.cs" />
+    <Compile Include="Locales.cs" />
+    <Compile Include="RSO.cs" />
+    <Compile Include="Kount.cs" />
+    <Compile Include="RsoPlatformId.cs" />
+    <Compile Include="Servers.cs" />
+    <Compile Include="AccountRecovery.cs" />
+    <Compile Include="Chat.cs" />
+    <Compile Include="EmailVerification.cs" />
+    <Compile Include="Entitlements.cs" />
+    <Compile Include="Lcds.cs" />
+    <Compile Include="LicenseAgrerementUrls.cs" />
+    <Compile Include="Payments.cs" />
+    <Compile Include="PreloginConfig.cs" />
+    <Compile Include="Rms.cs" />
+    <Compile Include="ServiceStatus.cs" />
+    <Compile Include="Store.cs" />
+    <Compile Include="Voice.cs" />
+    <Compile Include="Region.cs" />
+    <Compile Include="RiotAuthOpenIdConfiguration.cs" />
+    <Compile Include="StaticHelper.cs" />
+    <Compile Include="Proxy.cs" />
+    <Compile Include="SettingsSave.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="AuthClass.cs" />
+    <Compile Include="StoreInfo.cs" />
+    <Compile Include="StroeInfoPlayer.cs" />
+    <Compile Include="RiotAuthToken.cs" />
+    <Compile Include="RiotAuthResult.cs" />
+    <Compile Include="AccessTokenJson.cs" />
+    <Compile Include="EntitlementsTokenJson.cs" />
+    <Compile Include="SpellBook.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="Items.cs" />
+    <Compile Include="SpellBookPage.cs" />
+    <Compile Include="UserData.cs" />
+    <Compile Include="Dat.cs" />
+    <Compile Include="ChampionJwt.cs" />
+    <Compile Include="ItemsChamp.cs" />
+    <Compile Include="Skin.cs" />
+    <Compile Include="Champion.cs" />
+    <Compile Include="ChampData.cs" />
+    <Compile Include="DataCS.cs" />
+    <Compile Include="EmailInfo.cs" />
+    <Compile Include="AuthDataGrid.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Classes\Account.cs" />
+    <Compile Include="SettingsView.xaml.cs">
+      <DependentUpon>settingsview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccountsWindow.xaml.cs">
+      <DependentUpon>accountswindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HelpFlyout.xaml.cs">
+      <DependentUpon>helpflyout.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AboutFlyout.xaml.cs">
+      <DependentUpon>aboutflyout.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>mainwindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImportWindow.xaml.cs">
+      <DependentUpon>importwindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProxyFlyout.xaml.cs">
+      <DependentUpon>proxyflyout.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>app.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fodyweavers.xml" />
+    <Resource Include="if_key_42264.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="costura\controlzex\dll.compressed" />
+    <EmbeddedResource Include="costura\controlzex\pdb.compressed" />
+    <EmbeddedResource Include="costura\costura\dll.compressed" />
+    <EmbeddedResource Include="costura\mahapps\metro\dll.compressed" />
+    <EmbeddedResource Include="costura\mahapps\metro\pdb.compressed" />
+    <EmbeddedResource Include="costura\newtonsoft\json\dll.compressed" />
+    <EmbeddedResource Include="costura\system\json\dll.compressed" />
+    <EmbeddedResource Include="costura\system\windows\interactivity\dll.compressed" />
+    <EmbeddedResource Include="costura\xnet\dll.compressed" />
+    <EmbeddedResource Include="costura\yamldotnet\dll.compressed" />
+    <EmbeddedResource Include="costura\zlib\net\dll.compressed" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="aboutflyout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="accounteditwindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="accountswindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="app.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="filterwindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="helpflyout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="importwindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="mainwindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="proxyflyout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="settingsview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

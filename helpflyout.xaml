@@ -1,0 +1,31 @@
+<UserControl x:Class="ReAuth.HelpFlyout"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008">
+  <Grid RenderTransformOrigin="0.487,0.475">
+    <Label Content="Getting started" FontSize="20" Height="40" Margin="0,0,0,415"
+           VerticalContentAlignment="Top" HorizontalAlignment="Left"/>
+    <Label Content="Accounts are to be in the format 
+User:Pass" Height="45" Margin="10,35,-10,375"
+           VerticalContentAlignment="Top" HorizontalAlignment="Left"/>
+    <Label Content="Valid regions are: BR, EUNE, EUW, JP, LA1, LA2, NA, OC1, RU, TR" Height="30"
+           Margin="10,80,0,340" VerticalContentAlignment="Top" HorizontalAlignment="Left"/>
+    <Label Content="Proxy Settings" FontSize="20" Height="40" Margin="0,110,0,300"
+           VerticalContentAlignment="Top" HorizontalAlignment="Left"/>
+    <Label Content="You must use an HTTPS Proxy 
+A proxy cannot have any auth requirements. When importing it must
+be in the format of   Server:Port
+
+When you add proxies, they are automatically checked for 
+availability of Riot servers.
+
+When all proxies have been used, it will automatically rotate to the
+first proxy.
+
+If you have any questions you can contact me in Telegram:
+
+@fiftythreecorp"
+           Margin="10,150,0,10" VerticalContentAlignment="Top" HorizontalAlignment="Left" Width="380"/>
+  </Grid>
+</UserControl>

@@ -1,0 +1,34 @@
+<SearchWindow x:Class="ReAuth.SearchWindow"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+              Window.Title="Filter" FrameworkElement.Height="Auto" FrameworkElement.Width="230"
+              Window.SizeToContent="Height" Control.BorderBrush="#CC119EDA" Control.BorderThickness="1"
+              Window.WindowStartupLocation="CenterScreen" Window.ResizeMode="NoResize">
+  <Grid Margin="10" RenderTransformOrigin="0.52,0.426" Height="297">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" MinHeight="270"/>
+      <RowDefinition Height="Auto" MinHeight="27"/>
+    </Grid.RowDefinitions>
+    <StackPanel Orientation="Vertical" Grid.Row="0">
+      <CheckBox x:Name="checkBoxMinimumLevel" Content="Minimum Level"/>
+      <Controls:NumericUpDown x:Name="numericUpDownMinimumLevel" Minimum="1" Maximum="2000" Value="20"
+                              UIElement.IsEnabled="{Binding IsChecked, ElementName=checkBoxMinimumLevel}"/>
+      <CheckBox Name="checkBoxMinimumChamps" Content="Minimum Champions" Grid.Column="0" Grid.Row="6"/>
+      <Controls:NumericUpDown FrameworkElement.Name="numericUpDownMinimumChamps" Value="0" Grid.Column="1" Grid.Row="6"
+                              UIElement.IsEnabled="{Binding ElementName=checkBoxMinimumChamps, Path=IsChecked}"/>
+      <CheckBox Name="checkBoxMinimumSkins" Content="Minimum Skins" Grid.Column="0" Grid.Row="7"/>
+      <Controls:NumericUpDown FrameworkElement.Name="numericUpDownMinimumSkins" Value="0" Grid.Column="1" Grid.Row="7"
+                              UIElement.IsEnabled="{Binding ElementName=checkBoxMinimumSkins, Path=IsChecked}"/>
+      <CheckBox Name="checkBoxMinimumRP" Content="Minimum RP" Grid.Column="0" Grid.Row="8"/>
+      <Controls:NumericUpDown FrameworkElement.Name="numericUpDownMinimumRP" Value="0" Grid.Column="1" Grid.Row="8"
+                              UIElement.IsEnabled="{Binding ElementName=checkBoxMinimumRP, Path=IsChecked}"/>
+      <CheckBox Name="checkBoxMinimumIP" Content="Minimum BE" Grid.Column="0" Grid.Row="9"/>
+      <Controls:NumericUpDown FrameworkElement.Name="numericUpDownMinimumIP" Value="0" Grid.Column="1" Grid.Row="9"
+                              UIElement.IsEnabled="{Binding ElementName=checkBoxMinimumIP, Path=IsChecked}"/>
+      <CheckBox x:Name="checkBoxNotValidated" Content="Email Status: Not validated" Height="25"/>
+    </StackPanel>
+    <Button Click="ApplyFilter" x:Name="FilterButton" Grid.Row="1" Content="Apply Filter" Height="27"
+            VerticalAlignment="Bottom"/>
+  </Grid>
+</SearchWindow>

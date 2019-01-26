@@ -1,0 +1,24 @@
+<UserControl x:Class="ReAuth.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro">
+  <Grid>
+    <Label Content="Settings" FontSize="20" VerticalContentAlignment="Top" HorizontalAlignment="Stretch"
+           Margin="0,0,0,375"/>
+    <ListBox HorizontalAlignment="Stretch" VerticalContentAlignment="Top" Height="375" VerticalAlignment="Top"
+             Width="300" Margin="0,45,0,0">
+      <Controls:ToggleSwitch x:Name="CheckUpdates" UIElement.IsEnabled="false" IsChecked="True"
+                             HeaderedContentControl.Header="Check For Updates" FrameworkElement.Height="67" OnLabel="Yes"
+                             Control.FontSize="12" Control.VerticalContentAlignment="Top"
+                             FrameworkElement.HorizontalAlignment="Stretch" FrameworkElement.Margin="10,0,10,0"/>
+      <Label x:Name="WorkersLabel" VerticalContentAlignment="Center" Content="Workers count: 3"
+             HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="27" Width="270" Margin="10,0,0,0"/>
+      <Slider ValueChanged="WorkersOnValueChanged" x:Name="WorkersCount" Value="3" HorizontalAlignment="Stretch"
+              VerticalAlignment="Top" Width="267" TickPlacement="TopLeft" IsSnapToTickEnabled="true" Minimum="1"
+              Maximum="15"/>
+    </ListBox>
+  </Grid>
+</UserControl>

@@ -1,0 +1,18 @@
+<UserControl x:Class="ReAuth.AboutFlyout"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008">
+  <Grid>
+    <Label Content="About" FontSize="20" Height="40" Margin="0,0,0,415" VerticalContentAlignment="Top"
+           HorizontalAlignment="Left"/>
+    <Label Content="LeagueOfLegendsAccountChecker by FiftyThreeCorp" Margin="10,35,0,390"
+           VerticalContentAlignment="Top" HorizontalAlignment="Left"/>
+    <Label Content="Version v1.0.0" VerticalContentAlignment="Top" HorizontalAlignment="Right"
+           Margin="0,60,207,365"/>
+    <Button Content="Github" HorizontalAlignment="Left" Margin="160,152,0,0" VerticalAlignment="Top"
+            Width="130"/>
+    <Button Content="Updates" HorizontalAlignment="Left" Margin="10,152,0,0" VerticalAlignment="Top"
+            Width="130"/>
+  </Grid>
+</UserControl>
